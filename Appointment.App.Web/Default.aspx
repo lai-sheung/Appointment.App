@@ -3,6 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <main>
+        <asp:Button ID="addBtn" Text="Afspraak toevoegen" runat="server" OnClick="addBtn_Click"/>
          <asp:GridView runat="server" ID="appointmentsGrid"
         ItemType="Appointment.App.Models.AppointmentModel" DataKeyNames="Id" 
         SelectMethod="appointmentsGrid_GetData"
